@@ -1,0 +1,97 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222; /* Fallback color */
+    background: linear-gradient(135deg, #005c97, #363795); /* Deep Blue Gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* The Weather Card */
+.card {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    color: #fff;
+    padding: 40px 35px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Search Bar Styling */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.search button:hover {
+    background: #00feba;
+    transform: scale(1.1);
+}
+
+/* Weather Information Styling */
+.weather-icon {
+    width: 140px;
+    margin-top: 10px;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.description {
+    font-size: 18px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    margin-top: 10px;
+}
